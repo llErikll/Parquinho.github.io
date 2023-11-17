@@ -1,13 +1,11 @@
-/* Adicione os estilos iniciais para .menu */
 .menu {
     background-color: black;
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    transition: background-color 0.7s; /* Adicione uma transição para suavizar a mudança de cor */
+    transition: background-color 0.7s;
 }
 
-/* Adicione a animação para #nav .menu:hover */
 #nav .menu:hover {
     animation-duration: 700ms;
     animation-name: Bmenu;
@@ -23,7 +21,6 @@
     }
 }
 
-/* Estilos restantes */
 * {
     color: white;
     background-color: rgb(23, 46, 68);
