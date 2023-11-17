@@ -6,7 +6,7 @@
     transition: background-color 0.7s;
 }
 
-#nav .menu:hover {
+.menu:hover {
     animation-duration: 700ms;
     animation-name: Bmenu;
     animation-fill-mode: forwards;
@@ -25,15 +25,17 @@
     color: white;
     background-color: rgb(23, 46, 68);
     margin: 0;
+    font-size: 14px;
 }
 
 nav {
     display: flex;
 }
 
-ul {
+nav ul{
     display: flex;
     list-style: none;
+    justify-content: space-around;
     margin: auto;
 }
 
@@ -41,7 +43,8 @@ nav ul li {
     padding: 14px 15px 10px 0;
 }
 
-nav ul li p {
+nav ul li span{
+    display: inline-block;
     padding: 26px 0 0 0;
 }
 
@@ -57,6 +60,7 @@ main ol {
     height: 250px;
     margin: 20px;
     border: black solid;
+    flex-wrap: wrap;
 }
 
 main ol li {
@@ -71,6 +75,7 @@ footer {
     height: 100px;
     color: rgb(255, 255, 255);
     width: auto;
+    text-align: center;
 }
 
 footer div {
@@ -79,4 +84,12 @@ footer div {
 
 footer div a {
     background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 350px) {
+    /* Estilos específicos para telas menores que 600px de largura */
+    * {
+        font-size: 12px;
+    }
+
 }
